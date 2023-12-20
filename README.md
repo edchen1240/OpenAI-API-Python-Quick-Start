@@ -16,6 +16,7 @@ Welcome to the OpenAI API Python Quick Start Guide, tailored for those new to co
 ## Requirement
 1. Install python (recommended), or use Google Colab.
 2. Apply for OpenAI API key at official website.
+3. Install necessary libraries in OpenAI_API_0_module\.py.
 
 ## Step
 1. Download three python files in the same folder.
