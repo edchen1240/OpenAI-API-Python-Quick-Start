@@ -12,7 +12,7 @@ Status: Complete.
 
 #[1] Import library.
 import OpenAI_API_0_module as oaapi #type: ignore
-openai_api_key = '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'  #  Put your API key here.
+openai_api_key = 'put-your-api-key-here'  #  Put your API key here.
 
 #[2] Read question from txt file.
 path_txt = oaapi.tkinter_select_file(dialog_title = 'Choose a question file')
