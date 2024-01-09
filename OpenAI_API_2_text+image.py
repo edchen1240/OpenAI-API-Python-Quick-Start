@@ -30,3 +30,5 @@ reply = oaapi.OpenAI_GPT_API_image_path(model_name
                                         , additional_info=1)
 oaapi.append_text_to_txt(path_txt, reply, 300)
 print('[Complete]')
+message = 'Do you want to open the txt file and close the program?'
+oaapi.do_you_want_to_open_txt(message, path_txt)
