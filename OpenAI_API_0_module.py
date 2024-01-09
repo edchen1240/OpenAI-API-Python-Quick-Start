@@ -100,6 +100,38 @@ def append_text_to_txt(path_txt, text_to_append, char_preview): # This code will
 
 
 
+def do_you_want_to_open_txt(message, path_txt):
+    print(message + ' [Y/N]')
+    string_ques = input(message)
+    string_ques = string_ques.lower()
+    if ('yes' in string_ques) or ('ye' in string_ques) or ('y' in string_ques) or ('ok' in string_ques) \
+        or ('sure' in string_ques) or ('go' in string_ques):
+        print('User agreed to proceed.', string_ques)
+        try:
+            # Attempt to open the text file
+            with open(path_txt, 'r') as file:
+                print(f"Contents of {path_txt}:\n")
+                print(file.read())
+            # Exit the program after displaying the file content
+            sys.exit()
+        except FileNotFoundError:
+            print(f"The file at {path_txt} was not found.")
+            sys.exit(1)
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            sys.exit(1)
+    elif ('no' in string_ques) or ('n' in string_ques):
+        print('User chose to stop.', string_ques)
+        sys.exit()
+    else:
+        print('[Invalid Input] I will just keep moving on.\n', string_ques)
+
+
+
+
+
+
+
 
 #[3] API functions
 
