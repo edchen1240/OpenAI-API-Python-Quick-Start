@@ -125,7 +125,7 @@ def OpenAI_GPT_API_short(model_name, openai_api_key, question_content, temperatu
         "temperature": temperature 
     }
     #[] Send the POST request to the OpenAI API
-    print('\n-- Sending API request. Please wait for HTTP request-response cycle.\n')
+    print('-- Sending API request. Please wait for HTTP request-response cycle.\n')
     response = requests.post(openai_api_url, headers=headers, data=json.dumps(data))
     content = None
     if response.status_code == 200:
@@ -157,7 +157,7 @@ def OpenAI_GPT_API_long(model_callsigns, openai_api_key, question_content, tempe
         #"temperature" is the randomness of the response. 0 is very deterministic and 1 is very creative.
     }
     #[] Send the POST request to the OpenAI API
-    print('\n--Sending API request. Please wait for HTTP request-response cycle.\n')    
+    print('--Sending API request. Please wait for HTTP request-response cycle.\n')    
     response = requests.post(openai_api_url, headers=headers, data=json.dumps(data))
     if response.status_code == 200:
         #[Dictionary] response_data were stored in a format of python dictionary with multiple "key:value" pairs.
@@ -207,7 +207,7 @@ def OpenAI_GPT_API_image_path(model_callsigns, openai_api_key, question_content,
         "max_tokens": 500
     }
     #[] Send the POST request to the OpenAI API
-    print('\n-- Sending API request. Please wait for HTTP request-response cycle.\n')
+    print('-- Sending API request. Please wait for HTTP request-response cycle.\n')
     response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
     if response.status_code == 200:
         response_data = response.json()
