@@ -31,3 +31,5 @@ oaapi.append_text_to_txt(path_txt = path_txt
                          , text_to_append = reply
                          , char_preview = 300)
 print('[Complete]')
+message = 'Do you want to open the txt file and close the program?'
+oaapi.do_you_want_to_open_txt(message, path_txt)
