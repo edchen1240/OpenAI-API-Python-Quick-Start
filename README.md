@@ -1,35 +1,58 @@
 # OpenAI API Python Quick Start
 
-## Introduction
-Welcome to the OpenAI API Python Quick Start Guide, tailored for those new to coding or looking to save time on their initial foray. 
-- This guide simplifies your journey into using OpenAI's API, highlighting key benefits over web-based interactions. 
-- With the API, you gain access to potentially newer models and exclusive features not available on the standard web interface. Additionally, it offers enhanced privacy for your interactions. Most importantly, the API enables you to integrate ChatGPT's capabilities into your own custom applications, opening up a world of creative possibilities.
+Welcome to the OpenAI API Python Quick Start Guide, ideal for beginners in coding or for those seeking to streamline their initial exploration. :blush:
 
-## Content
-- OpenAI_API_0_module\.py:
-    A function bank to store function and make the main codes easier to read.
-- OpenAI_API_1_text\.py:
-    Code for submitted text question written in .txt file.
-- OpenAI_API_2_text+image\.py:
-    Code for submitted text question written in .txt file, and a image file (.jpg, .jpeg, .png, .bmp, or .gif').
+## Introduction
+If a webpage is an interface designed for humans, then an API (Application Programming Interface) is an interface designed for programs. It allows programmers to integrate the web-based OpenAI service into their own applications.
+##### Pros of using the API to access ChatGPT:
+- Gain access to potentially newer models and exclusive features not available on the standard web interface.
+- Enhanced privacy for your interactions.
+- Enables the integration of ChatGPT's capabilities into your custom applications.
+- Bypass organizational internet censorship to the [webpage ChatGPT](https://chat.openai.com/).
+##### Cons of using the API to access ChatGPT:
+- Python installation on your computer is required.
+- Involves a small amount of programming (reading a few lines of code, modifying something, and debugging if necessary).
+&nbsp;
+
+## File Contents
+- `OpenAI_API_0_module.py`:
+    A function bank to store functions and simplify the main code for readability.
+- `OpenAI_API_1_text.py`:
+    Code for submitting text queries from a .txt file.
+- `OpenAI_API_2_text+image.py`:
+    Code for submitting text queries from a .txt file and an image file (formats: .jpg, .jpeg, .png, .bmp, or .gif).
 
 ## Requirement
-1. Install python (recommended), or use Google Colab.
-2. Apply for OpenAI API key at official website.
-3. Install necessary libraries in OpenAI_API_0_module\.py.
+1. Make sure your organization allows you to visit [this webpage](https://github.com/edchen1240/OpenAI-API-Python-Quick-Start) that you are currently looking at, and the API portal [https://api.openai.com/](https://api.openai.com/).
+2. Install python and an IDE (like [VSCode](https://code.visualstudio.com/docs/python/python-tutorial)), as well as necessary libraries in OpenAI_API_0_module\.py. (Such as sys, os, base64, tkinter, datetime, json, and requests.)
+3. Sign-up for OpenAI API key at [OpenAI's official website](https://openai.com/blog/openai-api). (Might need a credit or debit card as payment method.)
 
-## Step
-1. Download three python files in the same folder.
-2. Create a .txt question file (in any directory) with questions inside.
-3. Run the code OpenAI_API_1_text, and select the question in the popout file dialog. 
-(If you run OpenAI_API_2_text+image, the first file dialog will ask for text file, and the second file dialog will ask for image file.)
-4. If the code prints out some part of the question for preview, and stay there for a few second, that means it's working and OpenAI is generating reply.
-5. When you see "Complete", the reply has been received, append to the original question, and save. You can now open and check the reply.
 
+## Steps for Running with an IDE
+We recommend following these steps if you're running the code for the first time:
+1. Download the Python files into the same folder.
+2. Create a .txt file with questions somewhere on your computer.
+3. Run `OpenAI_API_1_text.py` and select the question file in the pop-up dialogue.
+   (If running `OpenAI_API_2_text+image`, the first dialogue will ask for the text file, and the second will ask for the image file.)
+4. If the code previews a portion of the question and pauses for a few seconds, it indicates that it's working and OpenAI is generating a response.
+5. Once "Complete" appears, the response has been retrieved, appended to the original question, and saved. You can now open the file to review the response.
+
+## Create a .bat File to Run Without an IDE
+1. Create a new text file with a clear name, such as "RUN_CHATGPT.bat", and insert the following code:
+```
+@echo off
+cd /d D:\path\to\your\folder
+python OpenAI_API_1_text.py
+pause
+```
+2. Save the file and change its extension from .txt to .bat.
+3. Double-click "RUN_CHATGPT.bat" to execute the code.
 
 ## Note
-1. It's an everychanging world, and I might not be ablt to followup with the major changes. Please refer to OpenAI's website for latest information.
+1. It's an everychanging world, and I might not be able to followup with the major changes. Please refer to OpenAI's website for latest information.
 2. Suggestions and recommendations are welcome: [edchen93\@mit.edu](mailto:edchen93@mit.edu)
 
 ## Maintaince Record
 1. 2023-12-20, Create and upload.
+2. 2024-01-10, Update codes.
+3. 2024-01-15, Update ReadMe, add 
