@@ -13,12 +13,12 @@ Status: Complete.
 
 #[1] Import library.
 import OpenAI_API_0_module as oaapi #type: ignore
-openai_api_key = 'put-your-api-key-here'  #  Put your API key here.
+openai_api_key = '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'  #  Put your API key here.
 
 #[] Read question from txt file
-path_txt = oaapi.tkinter_select_file(dialog_title = 'Choose a question .txt file')
+path_txt, basename_txt = oaapi.tkinter_select_file(dialog_title = 'Choose a question .txt file')
 question_content = oaapi.read_text_from_txt(path_txt, 300)
-path_image = oaapi.tkinter_select_file(dialog_title = 'Choose a image file')
+path_image, basename_image = oaapi.tkinter_select_file(dialog_title = 'Choose a image file')
 
 
 #[] Assign model and API key
