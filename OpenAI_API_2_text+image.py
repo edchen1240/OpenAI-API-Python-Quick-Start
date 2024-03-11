@@ -15,13 +15,13 @@ Status: Complete.
 import OpenAI_API_0_module as oaapi #type: ignore
 openai_api_key = 'your-openai-api-key'  #  Put your API key here.
 
-#[] Read question from txt file
+#[2] Read question from txt file
 path_txt, basename_txt = oaapi.tkinter_select_file(dialog_title = 'Choose a question .txt file')
 question_content = oaapi.read_text_from_txt(path_txt, 300)
 path_image, basename_image = oaapi.tkinter_select_file(dialog_title = 'Choose a image file')
 
 
-#[] Assign model and API key
+#[3] Assign model and API key
 model_name = 'gpt-4-vision-preview'
 reply = oaapi.OpenAI_GPT_API_image_path(model_name
                                         , openai_api_key
