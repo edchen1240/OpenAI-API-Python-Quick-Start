@@ -8,6 +8,7 @@ If a webpage is an interface designed for humans, then an API (Application Progr
 - Gain access to potentially newer models and exclusive features not available on the standard web interface.
 - Enhanced privacy for your interactions.
 - Enables the integration of ChatGPT's capabilities into your custom applications.
+- Avoid congestion on webpage service.
 - Bypass organizational internet censorship to the [webpage ChatGPT](https://chat.openai.com/).
 ##### Cons of using the API to access ChatGPT:
 - Python installation on your computer is require, or other method that have access to API.
