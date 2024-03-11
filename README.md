@@ -27,7 +27,7 @@ If a webpage is an interface designed for humans, then an API (Application Progr
 
 
 ## Requirement
-1. Make sure your organization allows you to visit [this webpage](https://github.com/edchen1240/OpenAI-API-Python-Quick-Start) that you are currently looking at, and the API portal [https://api.openai.com/](https://api.openai.com/) (should be able to see a welcome message.)
+1. Make sure your organization allows you to visit [this webpage](https://github.com/edchen1240/OpenAI-API-Python-Quick-Start) that you are currently looking at, and the API portal [https://api.openai.com/](https://api.openai.com/). (Should be able to see a welcome message.)
 2. Install python and an IDE (like [VSCode](https://code.visualstudio.com/docs/python/python-tutorial)), as well as necessary libraries in OpenAI_API_0_module\.py. (Such as sys, os, base64, tkinter, datetime, json, requests, subprocess, re, and shutil.)
 3. Sign-up for OpenAI API key at [OpenAI's official website](https://openai.com/blog/openai-api). (Might need a credit or debit card as payment method.)
 
