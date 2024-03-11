@@ -10,7 +10,7 @@ If a webpage is an interface designed for humans, then an API (Application Progr
 - Enables the integration of ChatGPT's capabilities into your custom applications.
 - Bypass organizational internet censorship to the [webpage ChatGPT](https://chat.openai.com/).
 ##### Cons of using the API to access ChatGPT:
-- Python installation on your computer is required.
+- Python installation on your computer is require, or other method that have access to API.
 - Involves a small amount of programming (reading a few lines of code, modifying something, and debugging if necessary).
 &nbsp;
 
@@ -21,10 +21,13 @@ If a webpage is an interface designed for humans, then an API (Application Progr
     Code for submitting text queries from a .txt file.
 - `OpenAI_API_2_text+image.py`:
     Code for submitting text queries from a .txt file and an image file (formats: .jpg, .jpeg, .png, .bmp, or .gif).
+- `OpenAI_API_3_autoText.py`:
+    Code for submitting text with upgrade interation question to allow (a) new topic, (b) follow up, or the original (c) select file.
+
 
 ## Requirement
-1. Make sure your organization allows you to visit [this webpage](https://github.com/edchen1240/OpenAI-API-Python-Quick-Start) that you are currently looking at, and the API portal [https://api.openai.com/](https://api.openai.com/).
-2. Install python and an IDE (like [VSCode](https://code.visualstudio.com/docs/python/python-tutorial)), as well as necessary libraries in OpenAI_API_0_module\.py. (Such as sys, os, base64, tkinter, datetime, json, and requests.)
+1. Make sure your organization allows you to visit [this webpage](https://github.com/edchen1240/OpenAI-API-Python-Quick-Start) that you are currently looking at, and the API portal [https://api.openai.com/](https://api.openai.com/) (should be able to see a welcome message.)
+2. Install python and an IDE (like [VSCode](https://code.visualstudio.com/docs/python/python-tutorial)), as well as necessary libraries in OpenAI_API_0_module\.py. (Such as sys, os, base64, tkinter, datetime, json, requests, subprocess, re, and shutil.)
 3. Sign-up for OpenAI API key at [OpenAI's official website](https://openai.com/blog/openai-api). (Might need a credit or debit card as payment method.)
 
 
@@ -45,6 +48,7 @@ cd /d D:\path\to\your\folder
 python OpenAI_API_1_text.py
 pause
 ```
+The `OpenAI_API_1_text.py` can be replaced with other files (but not `OpenAI_API_0_module.py`).
 2. Save the file and change its extension from .txt to .bat.
 3. Double-click "RUN_CHATGPT.bat" to execute the code.
 
@@ -55,4 +59,5 @@ pause
 ## Maintaince Record
 1. 2023-12-20, Create and upload.
 2. 2024-01-10, Update codes.
-3. 2024-01-15, Update ReadMe, add 
+3. 2024-01-15, Update ReadMe.
+4. 2024-03-11, Upgrade interation question to allow new topic, follow up, or the original select file.
